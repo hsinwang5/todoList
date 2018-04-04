@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #AAA;
+    background-image: linear-gradient(
+        to right, #221469, #e34285
+    );
+    font-family: "Open Sans",  sans-serif;
+    font-size: 1.5em;
+}
+
+#mainContainer {
+    margin: 20vh auto;
+    width: 300px;
+    text-align: center;
+}
+
+#titleBar {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    background: #5b6af5;
+    padding: 0 2% 0 4%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#addTask {
+    float: right;
+    width: 75px;
+    height: 100%;
+    border: none;
+    background: none;
+    font: inherit;
+    outline: none;
+}
+
+input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 3em;
+    background: #EEE;
+    border:none;
+    padding: 0 4%;
+    font: inherit;
+    font-size: .75em;
+    
+}
+
+.hideInput {
+    display: none;
+}
+
+.todoContainer {
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.todo {
+    display: inline-block;
+    background: white;
+    /* padding: 2% 3%; */
+    font-size: .8em;
+    padding-left: 4%;
+}
+
+.trash {
+    width: 0;
+    display: inline-block;
+    background: red;
+    margin: 0;
+    color: white;
+    text-align: center;
+    transition: width .5s;
+}
+
+.underline {
+    text-decoration: line-through;
+}
+
+div:nth-child(even) {
+    background: #EEE;
+}
+
+div:nth-child(even) span:last-child {
+    background: #EEE;
+}
+
+/* .trash:first-child {
+    background: blue;
+} */
