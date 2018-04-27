@@ -3,6 +3,7 @@ var mainContainer = document.querySelector("#mainContainer");
 var browserTest = document.querySelector(".todo");
 
 //vanilla js event delegation - equivalent to .on(a, b, c)
+//e.target refers to direct element that was clicked on
 mainContainer.addEventListener("click", function(e) {
     console.log(e.target.classList.value);
     if (e.target.classList.item(0) === "todo") {
